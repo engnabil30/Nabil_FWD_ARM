@@ -124,7 +124,7 @@ typedef enum
 typedef struct 
 {
     IntCtrl_InterruptType intId;
-    uint8 priority;
+    uint16 priority;
 } IntCtrl_IntSetupType;
 
 #endif /* INTCTRL_TYPES_H */

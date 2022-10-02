@@ -19,10 +19,25 @@
 /* ================================================================================================================= */
 
 #include "IntCtrl.h"
+#include "McuCtrl.h"
+#include "DioCtrl.h"
+#include "PortCtrl.h"
 
 int main(void)
 {
     IntCtrl_Init();
+    McuCtrl_Init();
+    Port_Init();
+    Dio_WriteChannel(PORTA, PIN1, HIGH);
+    Dio_WriteChannel(PORTA, PIN1, LOW);
+    Dio_WriteChannel(PORTA, PIN2, HIGH);
+    Dio_WriteChannel(PORTA, PIN5, HIGH);
+    Dio_WriteChannel(PORTA, PIN5, LOW);
+    Dio_WritePort(PORTA, 0x88);
+    while (1)
+    {
+        
+    }
 }
 
 /* ================================================================================================================= */

@@ -25,10 +25,11 @@
 /* ================================================================================================================= */
 
 /**********************************************************************************************************************
- *  Type names of interrupts to be enabled. Each in new line, seperated by comma.
- *  Ex  : interrupt1,
- *        interrupt2,
- *        interrupt3
+ *  Type names of interrupts to be enabled and their priority seperated by comma.
+ *  Ex  : {interrupt1, priority},
+ *        {interrupt2, priority},
+ *        {interrupt3, priority}
+ *  priority: 0 ~ 7
  *********************************************************************************************************************/
 IntCtrl_IntSetupType intEnable[] =
 {
